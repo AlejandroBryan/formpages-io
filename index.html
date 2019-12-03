@@ -8,6 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/normalize.css" type="text/css">
 	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Alata|Baskervville|Jomolhari|Neucha&display=swap" rel="stylesheet">
 
 </head>
 
@@ -20,14 +21,19 @@
 		<p class="p1">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 
 
-		<!---contact information --->
+		<!--contact information-->
+
+
 		<form>
 			<fieldset class="user-contact">
+
+
 				<legend>Contact Information</legend>
 
 
 				<div class="user-info">
-					<label for="name ">Full Name</label> <input type="text" name="name" id="name" placeholder="required" required>
+					<label for="name">Full Name</label>
+					<input type="text" name="name" id="name" placeholder="required" required>
 
 
 				</div>
@@ -38,25 +44,25 @@
 
 				</div>
 				<div class="user-info">
-					<label for="phone ">Phone Number</label>
+					<label for="phone">Phone Number</label>
 					<input type="tel" name="phone" id="phone">
 
 				</div>
 				<div class="user-info">
-					<label for="address ">Address</label>
-					<input type="field" name="address" id="address"><br />
+					<label for="address">Address</label>
+					<input type="text" name="address" id="address"><br />
 				</div>
 				<div class="user-info">
 
 					<label for="city">City</label>
-					<input type="field" name="city" id="city">
+					<input type="text" name="city" id="city">
 					<br />
 				</div>
 
 				<div class="user-info">
 					<label for="i-state">State</label>
-					<select name="i-state" id="state">
-						<option value="">choose state</option>
+					<select name="state" id="i-state">
+						<option value="">Choose State</option>
 						<option value="AL">Alabama</option>
 						<option value="AK">Alaska</option>
 						<option value="AZ">Arizona</option>
@@ -113,7 +119,7 @@
 				</div>
 				<div class="user-info">
 					<label for="zip">Zip Code</label>
-					<input type="number" name="zip" id="zip" pattern="[0-9]{5}]">
+					<input type="text" name="zip" id="zip" pattern="[0-9]{5}]">
 
 
 				</div>
@@ -126,20 +132,23 @@
 
 
 				<p>Select the newsletter you would like recieve</p>
-				<input type="checkbox" name="newsletter_news" value="html" checked> HTML News<br>
-				<input type="checkbox" name="newsletter_news" value="css">Css News<br>
-				<input type="checkbox" name="newsletter_news" value="javascript"> Javascript News<br><br>
+				<input type="checkbox" name="newsletter_news" id="html-text" value="html-text" checked="checked"> 
+				<label for="html-text">HTML News</label><br />
+				<input type="checkbox" name="newsletter_news" id="css-text" value="css">
+				<label for="css-text">Css News</label><br />
+				<input type="checkbox" name="newsletter_news" id="javascript-text" value="javascript"> 
+				<label for="javascript-text">Javascript News</label><br />
 
 
 				<p>Newsletter format</p>
 
-				<input type="radio" id="html" name="text_selection">
+				<input type="radio" id="html" name="text_selection" checked="checked">
 				<label for="html">HTML</label><br />
 
 
 
-				<input type="radio" id="plan-text" name="text_selection">
-				<label for="plain-text">Plain text</label>
+				<input type="radio" id="text-plan" name="text_selection">
+				<label for="text-plan">Plain text</label>
 
 				<br />
 				<br />
@@ -149,11 +158,10 @@
 
 				<label for="comment">Tell us about the story would you like to heard</label>
 				<br />
-				<br />
-				
+
+
 
 				<textarea id="comment" name="user-_comment">
-please let your comment!
 </textarea>
 				<input type="button" value="Sign Up">
 

@@ -4,14 +4,15 @@
 }
 
 body {
-	background-color: white;
-	margin: 0 auto;
 
+
+	margin: 0 auto;
+	background-color: white;
 }
 
 .wrapper {
 
-	max-width: 768;
+	max-width: 768px;
 	min-width: 320px;
 
 }
@@ -24,11 +25,13 @@ form {
 
 h1 {
 	color: white;
-	background-color: blue;
+	background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
 	text-transform: uppercase;
 	margin-top: 0;
 	padding: 25px 0;
 	text-align: center;
+	font-family: 'Alata', sans-serif;
+	
 
 }
 
@@ -47,7 +50,16 @@ h2 {
 
 legend {
 	padding: 30px 0;
+	font-size: 22px;
+	font-weight: 700;
+	font-family: 'Jomolhari', serif;
 }
+
+/********general section******/
+/********general section******/
+/********general section******/
+/********general section******/
+
 
 .user-info,
 .user-contact {
@@ -56,33 +68,32 @@ legend {
 
 }
 
-.user-info label{
+.user-info label {
 	margin-bottom: 12px;
+	font-family: 'Baskervville', serif;
+	font-size: 20px;
+	font-weight: 600;
 }
 
 .user-info:last-child {
 	border-bottom: 2px solid black;
 }
-::placeholder{
+
+::placeholder {
 	text-align: right;
 }
 
 #zip {
 	width: 50%;
-	border-bottom: 2px solid black;
+
 }
 
 
 input[type="text"],
 input[type="email"],
-input[type="number"],
 input[type="tel"],
-input[type="field"],
-input[type="url"],
 textarea,
 select {
-	background: rgba(255, 255, 255, 0.1);
-	border: white;
 	border-radius: 6px;
 	font-size: 16px;
 	height: auto;
@@ -90,14 +101,71 @@ select {
 	outline: 0;
 	padding: 15px;
 	width: 100%;
-	background-color: #e8eeef;
-	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05) inset;
+	background-color: #ccffe6;
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.05);
 	margin-bottom: 30px;
+	border: white;
 }
+
+/*********animation section***********/
+/*********animation section***********/
+/*********animation section***********/
+/*********animation section***********/
+/*********animation section***********/
+
+input[type="text"]:focus {
+	background: white;
+	transform: scale(1.2);
+	color: black;
+}
+
+input[type="tel"]:focus {
+	background: white;
+	transform: scale(1.2);
+	color: black;
+
+}
+
+input[type="email"]:focus {
+
+	background: white;
+	transform: scale(1.2);
+	color: black;
+
+}
+
+select:focus {
+	transform: scale(1.2);
+	background-color: white;
+	color: black;
+}
+
+textarea:focus {
+	transform: scale(1.1);
+	background-color: white;
+	color: black;
+	border: 2px solid black;
+}
+
 
 fieldset {
 	border: none;
 }
+
+input[type="radio"],
+input[type="checkbox"] {
+	display: inline-block;
+
+}
+
+input:checked + label {
+	color: cornflowerblue;
+	font-weight: 600;
+	font-family: 'Neucha', cursive;
+	text-transform: uppercase;
+	;
+}
+
 
 input[type="button"] {
 
@@ -105,8 +173,19 @@ input[type="button"] {
 	width: 100%;
 	border-radius: 6px;
 	font-size: 30px;
-	color: white
+	color: white;
+	transition: all 1s;
+
 }
+
+input[type="button"]:hover {
+
+	background-color: whitesmoke;
+	color: forestgreen;
+	transform: scale(1.1);
+}
+
+/******media queries*****/
 
 @media (min-width: 768px) {
 	.user-contact .user-info {
