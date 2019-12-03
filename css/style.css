@@ -31,7 +31,7 @@ h1 {
 	padding: 25px 0;
 	text-align: center;
 	font-family: 'Alata', sans-serif;
-	
+
 
 }
 
@@ -113,6 +113,10 @@ select {
 /*********animation section***********/
 /*********animation section***********/
 
+:focus{
+	transition: all 8s;
+}
+
 input[type="text"]:focus {
 	background: white;
 	transform: scale(1.2);
@@ -136,7 +140,7 @@ input[type="email"]:focus {
 
 select:focus {
 	transform: scale(1.2);
-	background-color: white;
+	background: white;
 	color: black;
 }
 
@@ -145,6 +149,7 @@ textarea:focus {
 	background-color: white;
 	color: black;
 	border: 2px solid black;
+	opacity: 0.5;
 }
 
 
